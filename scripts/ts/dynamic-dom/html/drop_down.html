@@ -1,8 +1,8 @@
 <!-- No special css is required for this snippet! Everything is already located in the header.css file. -->
 <!-- This is the container for drop down button and the content that will unfold. -->
-<div class="dropdown">
+<div class="dropdown" id="photos-menu">
   <!-- This is a button to open the drop down menu. -->
-  <button class="dropbtn">
+  <button class="dropbtn" type="button" aria-haspopup="true" aria-expanded="false">
     <!-- 
             Put this tag in the button tag if you want the button to link somewhere when clicked:
             <a id="about" href="files/about.html">About </a> 
@@ -13,9 +13,12 @@
         -->
   </button>
   <!-- This is the div surrounding all drop down content that will unfold when the dropbtn is hovered on. -->
-  <div class="dropdown-content">
+  <div class="dropdown-content" role="menu">
     <!-- Put as many of these link tags as you want to represent different nagivation options. -->
-    <a id="" href=""> </a>
+    <a role="menuitem" href="teddy_bears_photos.html">Teddy Bears</a>
+    <a role="menuitem" href="rainbow_bears_photos.html">Rainbow Bears</a>
+    <a role="menuitem" href="sunshine_friends_photos.html">Sunshine Friends</a>
+    <a role="menuitem" href="explorers_photos.html">Explorers</a>
     <!-- 
             Also remember that you can but more than just link tags in here. If you decide
             that you would actually like to have a button or an input of any kind of even just
